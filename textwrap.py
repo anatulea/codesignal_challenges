@@ -20,3 +20,13 @@ import textwrap
 
 def feedbackReview(feedback, size):
     return textwrap.TextWrapper(size).wrap(feedback)
+
+# def feedbackReview(feedback, size):
+# return textwrap.wrap(feedback, size)
+
+import re
+def feedbackReview(feedback, size):
+    return re.compile(r"[^ ].{0," + str(size - 2) + r"}[^ ](?= |\Z)").findall(feedback)
+
+def feedbackReview(feedback, size):
+    return re.compile('\S.{,' + `size - 2` + '}\S(?=\s|$)').findall(feedback)
