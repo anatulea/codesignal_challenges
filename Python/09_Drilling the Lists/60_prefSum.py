@@ -19,7 +19,8 @@ def prefSum(a):
 
     # Other solutions:
     # return list(functools.reduce(lambda memory, y: memory + [memory[-1]+ y], a[1:], [a[0]]))
-
+    # return [reduce(lambda x,y:x+y,a[:i]) for i in range(1,len(a)+1)]
+    
     # The reduce(fun,seq) function is used to apply a particular function passed in its argument to all of the list elements mentioned in the sequence passed along
 
 # Using numpy
@@ -29,6 +30,7 @@ def prefSum(a):
 #     return cumsum(a)
 
 def prefSum3(a):
+    # return [sum([a[x] for x in range(y+1)]) for y in range(len(a))]
 
     result = []
     # result = [sum(a[ : i + 1]) for i in range(len(a))] 
