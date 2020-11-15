@@ -10,6 +10,20 @@ checkParticipants(participants) = [2].
 
 For the game number 2 (0-based) 2 people are required, but only one person has registered.
 '''
- def checkParticipants(participants):
-    return [idx for idx, num in enumerate(participants) if num < idx]
-    # return filter (lambda i:i>participants[i],range(len(participants)))
+def checkParticipants(participants):
+   return [idx for idx, num in enumerate(participants) if num < idx]
+   # return filter (lambda i:i>participants[i],range(len(participants)))
+
+participants = [0, 1, 1, 5, 4, 8]
+
+def checkParticipants2(participants):
+   result = [] # will store the game index of the games that too few people sighnd for
+   for idx, num in enumerate(participants):
+      if idx > num: #if the index is grater than the value means not enough people signed
+         result.append(idx) # add the index to the result array 
+   return result
+      
+print(checkParticipants2(participants)) # [2]
+
+participants2 = [3, 3, 3, 3, 3, 3, 3, 3]
+print(checkParticipants2(participants2)) # [4, 5, 6, 7]
