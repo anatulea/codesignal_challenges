@@ -21,7 +21,22 @@ def crackingPassword(digits, k, d):
 
     return [i for i in sorted([createNumber(i) for i in set(list(product(createNumber(digits), repeat = k)) ) ]) if ((int(i) % d == 0) or int(i.lstrip("0")) % d == 0)  ]
 
-#  return sorted(product(createNumber(digits), repeat = k))
+# return sorted(product(createNumber(digits), repeat = k))
 # return sorted(x for x in map(createNumber,product(digits,repeat=k)) if int(x)%d==0)
 # return list(filter(lambda x: int(x) % d == 0, map(createNumber, product(sorted(digits), repeat = k))))
-# return sorted(ifilter(lambda n: int(n) % d == 0, imap(createNumber, product(digits, repeat=k))))
+# return sorted(ifilter(lambda n: int(n) % d == 0, imap(createNumber, product(digits, repeat=k)))) 
+
+def crackingPassword2(digits, k, d):
+    def createNumber(digs):
+        return "".join(map(str, digs))
+    
+    result =[]
+    possible_pass = list(product(createNumber(digits), repeat = k))
+
+    for i in possible_pass:
+        num = createNumber(i)
+        if int(num) % d ==0:
+            result.append(str(num))
+
+    return sorted(result)
+print(crackingPassword2([1, 5, 2], 2, 3))
