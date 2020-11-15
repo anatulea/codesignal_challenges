@@ -18,16 +18,39 @@ def mathPractice(numbers):
     # return reduce(lambda x, (i,y): x+y if i%2 else x*y, enumerate(numbers), 1)
     # return reduce(lambda z,(x,y):z*x+y, zip(numbers[::2],numbers[1::2]+[0]), 1)
     # return functools.reduce(lambda s, a: s+numbers[a] if a%2==1 else s*numbers[a], range(1, len(numbers)), numbers[0])
+from functools import reduce
 
-# def mathPractice2(numbers):
-#     total =0
-#     for x, y in enumerate(numbers):
-#         print(f'x{x}  y{y}')
-#         if numbers.index(y)%2:
-#             total = total + (x*y)
-#             print(f'total:{total}')
-#         else:
-#             total = total + (x+y)
-#             print(f'total:{total}')
-#     return total
-# print(mathPractice2([1, 2, 3, 4, 5, 6]))
+def my_func(x, y):
+    if y[0]%2:
+        return x+y[1]
+    else:
+        return x*y[1]
+
+def mathPractice2(numbers):
+   
+    it = iter(enumerate(numbers))
+    value = 1
+    
+    value = reduce(my_func, it, value)
+    # value = reduce(lambda x, y: (x+y[1]) if y[0]%2 else x*y[1], it, value)
+
+    return value
+    
+        
+    
+
+
+
+
+
+    # total =0
+    # for x, y in enumerate(numbers):
+    #     print(f'x{x}  y{y}')
+    #     if numbers.index(y)%2:
+    #         total = total + (x*y)
+    #         print(f'total:{total}')
+    #     else:
+    #         total = total + (x+y)
+    #         print(f'total:{total}')
+    # return total
+print(mathPractice2([1, 2, 3, 4, 5, 6]))
