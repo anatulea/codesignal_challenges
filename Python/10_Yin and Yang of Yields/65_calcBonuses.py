@@ -19,7 +19,19 @@ The player has collected only 4 bonuses, so his final score is 0.
 
 '''
 def calcBonuses(bonuses, n):
-    it = iter(bonuses)    
+    it = iter(bonuses) 
+    '''   
+     The iter() function creates an object which can be iterated one element at a time.These objects are useful when coupled with loops like for loop, while loop.
+     
+     The iter() function takes two parameters:
+        - object - object whose iterator has to be created (can be sets, tuples, etc.)
+        - sentinel (optional) - special value that is used to represent the end of a sequence
+
+    We can use the iter() method with the sentinel parameter to stop the iteration. If the value returned from __next__() is equal to sentinel, StopIteration will be raised, otherwise, the value will be returned.
+    '''
+    # it = (b for b in bonuses)
+    # it = [(yield x) for x in bonuses]
+    # it = (x for x in bonuses if len(bonuses) >= n)
     res = 0
 
     try:
