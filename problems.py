@@ -172,6 +172,32 @@ def meanGrups(a):
 
 
 
+def checkPalindrome(inputString):
+    return inputString == inputString[-1::-1]
+
+
+
+def adjacetElementProduct(inputArray):
+    size = len(inputArray)
+    for x in range(1, size):
+        prod = inputArray[x-1]*inputArray[x]
+        if x == 1:
+            maxprod = prod
+        if prod>maxprod:
+            maxprod = prod
+    return maxprod
+
+
+def shapeArea(n):
+    area = 1
+    for i in range(1, n+1):
+        area = area + ((i-1)*4)
+    return area
+
+
+
+
+
  
  
  
