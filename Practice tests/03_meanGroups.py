@@ -65,3 +65,14 @@ def meanGroups(a):
             table[mean].append(idx)
             
     return list(table.values())
+
+
+def meanGrups(a):
+    d, e = [], []
+    for i, j in enumerate(a):
+        if sum(j)/len(j) not in e:
+            e+=[sum(j)/len(j)]
+            d+=[[i]]
+        else:
+            d[e.index(sum(j)/len(j))]+=[i]
+    return d
