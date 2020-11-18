@@ -106,3 +106,53 @@ def almostIncreasingSequence(sequence):
                 return True
             else:
                 return False
+
+def almostIncreasingSequence(sequence):
+    numFail = 0
+    prev =sequence[0]
+    for i in range(len(sequence)-1):
+        if sequence[i+1]<=prev:
+            numFail+=1
+            if i == 0:
+                prev = sequence[i+1]
+            elif i<= len(sequence)-3 and sequence[i+2]<=sequence[i]:
+                if sequence[i+1]>sequence[i-1]:
+                    prev = sequence[i+1]
+                else:
+                    prev = sequence[i]
+                if sequence[i+2]<=prev:
+                    numFail+=1
+            else:
+                prev= sequence[i]
+            if numFail>1:
+                return False
+        else:
+            prev = sequence[i+1]
+    return True
+
+def almostIncreasingSequence(sequence):
+    droppped = False
+    last = prev = min(sequence) - 1
+    for elm in sequence:
+        if elm <= last:
+            if droppped:
+                return False
+            else:
+                droppped = True
+            if elm <= prev:
+                prev = last
+            elif elm >= prev:
+                prev = last = elm
+        else:
+            prev, last = last, elm
+    return True
+
+def almostIncreasingSequence(s):
+    return 3> sum((i >= j) + (i >= k) for i, j, k in zip(s, s[1:], s[2:] + [10**6]))
+
+def almostIncreasingSequence(sequence):
+    c = 0
+    for i in range(len(sequence)-1):
+        if sequence[i] >= sequence[i+1]: c += 1
+        if i+2 < len(sequence) and sequence[i] >= sequence[i+2]: c += 1
+    return c < 3

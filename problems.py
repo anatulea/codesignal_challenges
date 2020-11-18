@@ -195,6 +195,55 @@ def shapeArea(n):
     return area
 
 
+def makeArrayConsecutive2(statues):
+    return len([i for i in range(min(statues), max(statues)) if i not in statues])
+
+
+
+def almostIncreasingSequence(sequence):
+    numFail = 0
+    prev =sequence[0]
+    for i in range(len(sequence)-1):
+        if sequence[i+1]<=prev:
+            numFail+=1
+            if i == 0:
+                prev = sequence[i+1]
+            elif i<= len(sequence)-3 and sequence[i+2]<=sequence[i]:
+                if sequence[i+1]>sequence[i-1]:
+                    prev = sequence[i+1]
+                else:
+                    prev = sequence[i]
+                if sequence[i+2]<=prev:
+                    numFail+=1
+            else:
+                prev= sequence[i]
+            if numFail>1:
+                return False
+        else:
+            prev = sequence[i+1]
+    return True
+
+
+def matrixElementsSum(matrix):
+    matrix_copy = matrix.copy()
+    total = 0
+
+    #loop over the rows
+    for row in matrix:
+        #loop over columns
+        for col_idx in range(len(row)):
+            if row[col_idx] == 0:
+                #replace all 0's in the matrix under current 0 to 0s
+                for i in range(matrix.index(row), len(matrix)):
+                    matrix_copy[i][col_idx] = 0
+    
+    #find sum of all remaining numbers in matrix
+    for row_copy in matrix_copy:
+        total+= sum(row_copy)
+    return total
+
+
+
 
 
 

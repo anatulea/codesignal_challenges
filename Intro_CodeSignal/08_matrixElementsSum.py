@@ -59,3 +59,22 @@ mymatrix =[ [1,1,1,0],
             [0,5,0,1], 
             [2,1,3,10]]
 print(matrixElementsSum(mymatrix))
+
+
+def matrixElementsSum(matrix):
+    matrix_copy = matrix.copy()
+    total = 0
+
+    #loop over the rows
+    for row in matrix:
+        #loop over columns
+        for col_idx in range(len(row)):
+            if row[col_idx] == 0:
+                #replace all 0's in the matrix under current 0 to 0s
+                for i in range(matrix.index(row), len(matrix)):
+                    matrix_copy[i][col_idx] = 0
+    
+    #find sum of all remaining numbers in matrix
+    for row_copy in matrix_copy:
+        total+= sum(row_copy)
+    return total
