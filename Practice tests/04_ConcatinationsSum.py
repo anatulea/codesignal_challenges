@@ -34,3 +34,12 @@ def concatenationsSum(a):
     t1=t*len(a)
     t2=sum([t*[len(str(x))-1 for x in a].count(j)*10**(j+1) for j in range(7)])
     return t1+t2
+
+
+def concatenationsSum(a):
+    sum = 0
+    for i in range(len(a)):
+        for j in range(len(a)):
+            prod = str(a[i]) + str(a[j])
+            sum += int(prod)
+    return sum
