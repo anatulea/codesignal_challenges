@@ -324,20 +324,6 @@ Given an array of strings, return another array containing all of its longest st
 Example
 
 For inputArray = ["aba", "aa", "ad", "vcd", "aba"], the output should be allLongestStrings(inputArray) = ["aba", "vcd", "aba"].
-
-Input/Output
-
-[execution time limit] 4 seconds (py3)
-
-[input] array.string inputArray
-
-A non-empty array.
-
-Guaranteed constraints: 1 ≤ inputArray.length ≤ 10, 1 ≤ inputArray[i].length ≤ 10.
-
-[output] array.string
-
-Array of the longest strings, stored in the same order as in the inputArray.
 '''
 
 
@@ -372,6 +358,41 @@ def allLongestStrings(inputArray):
     m = max(len(s) for s in inputArray)
     r = [s for s in inputArray if len(s) == m]
     return r
+
+
+'''
+Given two strings, find the number of common characters between them.
+
+Example
+
+For s1 = "aabcc" and s2 = "adcaa", the output should be commonCharacterCount(s1, s2) = 3.
+
+Strings have 3 common characters – 2 “a”s and 1 “c”.
+'''
+
+def commonCharacterCount(s1, s2):
+    count = 0
+    for i in range(0, len(s1):
+        for j in range (0, len(s2)):
+            if s1[i]== s2[j]:
+                count+=1
+                s2 = s2[:j]+s2[(j+1)]
+                break
+    return count
+
+def commonCharacterCount(s1, s2):
+    s1_list=list(s1)
+    s2_list=list(s2)
+    common=0
+    for i in s1_list:
+        for s in s2_list:
+            if i==s:
+                common+=1
+                s2_list.remove(s)
+                break
+    return common
+
+
 
 
 
