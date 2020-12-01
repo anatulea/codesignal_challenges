@@ -24,6 +24,18 @@ The number of the century the year is in.
 '''
 def centuryFromYear(year):
     return (year + 99) // 100
+    # return (year-1)//100+1
+
+    # return int((year - 1) / 100) + 1
+    
+ '''The Math.ceil() function always rounds a number up to the next largest integer.'''
+    # return math.ceil(year/100)
+
+#     if year % 100 == 0:
+#     return(int(year/100))
+#   else:
+#     return(int(year/100 + 1))
+    
 
 #  my solution 
 def centuryFromYear(year):
