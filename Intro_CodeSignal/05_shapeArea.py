@@ -26,6 +26,14 @@ The area of the n-interesting polygon.
 def shapeArea(n):
     return (n**2+(n-1)**2)
 
+
+def shapeArea(n):
+    result = 1
+    for i in range(n):
+        result += 4 * i
+        
+    return result
+
 print(shapeArea(2))
 print(shapeArea(3))
 print(shapeArea(4))
