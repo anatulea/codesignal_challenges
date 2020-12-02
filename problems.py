@@ -27,10 +27,10 @@ a[2] ∘ a[0] = 3 ∘ 1 = 31,
 a[2] ∘ a[1] = 3 ∘ 2 = 32,
 a[2] ∘ a[2] = 3 ∘ 3 = 33.
 The total result is 11 + 12 + 13 + 21 + 22 + 23 + 31 + 32 + 33 = 198.
+'''
 
+#  https://stackoverflow.com/questions/63371610/efficient-algorithm-to-find-the-sum-of-all-concatenated-pairs-of-integers-in-a-l
 
-''''
-# https://stackoverflow.com/questions/63371610/efficient-algorithm-to-find-the-sum-of-all-concatenated-pairs-of-integers-in-a-l
 def concatenationsSum(a):
     t=sum(a)
     t1=t*len(a)
@@ -392,11 +392,111 @@ def commonCharacterCount(s1, s2):
                 break
     return common
 
+def isLucky(n):
+    s = str(n)
+    pivot= len(s)//2
+    left=s[:pivot]
+    right= s[pivot:]
+    return sum(map(int, left))== sum(map(int, right))
 
 
 
+def sortByHeight(a):
+
+    n= len(a)
+    for x in range(n):
+        for y in range(n-1):
+            if a[x]!=-1 and a[x]<a[y]:
+                a[x],a[y]= a[y],a[x]
+    return a
 
 
+def reverseInParenthesis(s):
+    for i in range(len(s)):
+        if s[i]=="(":
+            start = i
+        if s[i]==")"
+            end = i
+            return reverseInParenthesis(s[:start]+s[start+1 : end][::-1]+s[end+1])
+    return s
+
+
+def alternatingSum(a):
+    return [sum(a[0::2]), sum(a[1::2])]
+
+
+def addBorder(picture):
+    return [(len(picture[0])+2)*'*']+ ["*"+ x+"*" for x in picture]+ [(len(picture[0])+2)*"*"]
+
+'''
+Two arrays are called similar if one can be obtained from another by swapping at most one pair of elements in one of the arrays.
+
+Given two arrays a and b, check whether they are similar.
+
+Example
+
+For a = [1, 2, 3] and b = [1, 2, 3], the output should be
+areSimilar(a, b) = true.
+
+The arrays are equal, no need to swap any elements.
+
+For a = [1, 2, 3] and b = [2, 1, 3], the output should be
+areSimilar(a, b) = true.
+
+We can obtain b from a by swapping 2 and 1 in b.
+
+For a = [1, 2, 2] and b = [2, 1, 1], the output should be
+areSimilar(a, b) = false.
+
+Any swap of any two elements either in a or in b won't make a and b equal.
+'''
+def areSimilar(a,b):
+    count=0
+    if sum(a)!= sum(b) or len(a)!= len(b):
+        return False
+    else:
+        for i in range(len(a)):
+            if (a[i]!= b[i]):
+                count+=1
+        return count <= 2 and sorted(a)== sorted(b)
+
+
+
+'''
+You are given an array of integers. On each move you are allowed to increase exactly one of its element by one. Find the minimal number of moves required to obtain a strictly increasing sequence from the input.
+
+Example
+
+For inputArray = [1, 1, 1], the output should be
+arrayChange(inputArray) = 3.
+'''
+ def arrayChange(inputArray):
+    c =  0
+    for i in range(1, len(inputArray)):
+        if inputArray[i]<= inputArray[i-1]:
+            c+=inputArray[i-1]-inputArray[i]+1
+            inputArray[i]= inputArray[i-1]+1
+    return c
  
  
+ '''
+ Given a string, find out if its characters can be rearranged to form a palindrome.
+
+Example
+
+For inputString = "aabb", the output should be
+palindromeRearranging(inputString) = true.
+
+We can rearrange "aabb" to make "abba", which is a palindrome.
+'''
+ def palindromeRearranging(inputstring):
+    char = set(inputstring)
+    t =False
+    for x in char:
+        if inputstring.count(x)%2==1 and t == True:
+            return False
+        elif inputstring.count(x)%2==1 and t == False:
+            t= True
+    return True
+
  
