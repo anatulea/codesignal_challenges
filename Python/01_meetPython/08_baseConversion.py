@@ -25,7 +25,8 @@ Here's why:
 def baseConversion(n, x):
     # hex is a function to  convert an integer number into it’s corresponding hexadecimal form.
     return hex(int(n,x))[2:] # [2:] is used to remove the prefix "0x"
+    # return format(int(n,x), 'x')
+    # return '{0:x}'.format(int(n,x))
 
-
-def baseConversion(n, x):
+def baseConversion2(n, x):
     return hex(sum((int(n[i]) if n[i] <= '9' else ord(n[i]) - ord('a') + 10) * x ** (len(n) - 1 - i) for i in range(len(n))))[2:]
