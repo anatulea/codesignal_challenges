@@ -24,6 +24,10 @@ def killKthBit(n, k):
     if n[len(n)-k] == '1':
         s[len(n)-k] = '0'
         new_bin = "".join(s)
+        print(new_bin)
         return int(new_bin,2)
     else:
+        print(n)
         return int(n,2)
+
+print(killKthBit(37, 3))
