@@ -31,6 +31,12 @@
     - [getCommit](Python/02_SlitheringinStrings/20_getCommit.py)
     
   - [Lurking in Lists](Python/03_LurkinginLists)
+    - [listConcatination](Python/03_LurkinginLists/22_listConcatination.py)
+    - [twoTeams](Python/03_LurkinginLists/23_twoTeams.py)
+    - [removeTasks](Python/03_LurkinginLists/24_removeTasks.py)
+    - [printList](Python/03_LurkinginLists/25_printList.py)
+  
+  
   - [Lambda illusions](Python/04_Lambdaillusions)
   - [Complexity of Comprehension](Python/05_Complexity%20of%20Comprehension)
   - [Fumbling in Functional](Python/06_Fumbling%20in%20Functional)
