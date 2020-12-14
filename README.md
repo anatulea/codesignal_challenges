@@ -44,6 +44,12 @@
     - [isTestSolvable](Python/04_Lambdaillusions/29_isTestSolvable.py)
   
   - [Complexity of Comprehension](Python/05_Complexity%20of%20Comprehension)
+    - [createSpiralMatrix](Python/05_Complexity%20of%20Comprehension/30_createSpiralMatrix.py)
+    - [constructShell](Python/05_Complexity%20of%20Comprehension/31_constructShell.py)
+    - [wordPower](Python/05_Complexity%20of%20Comprehension/32_wordPower.py)
+    - [coolPairs](Python/05_Complexity%20of%20Comprehension/33_coolPairs.py)
+    - [multiplicationTable](Python/05_Complexity%20of%20Comprehension/34_multiplicationTable.py)
+    
   - [Fumbling in Functional](Python/06_Fumbling%20in%20Functional)
   - [Caravan of Collections](Python/07_Caravan%20of%20Collections)
   - [Itertools Kit](Python/08_Itertools%20Kit)
