@@ -20,6 +20,16 @@
     - [listBeautifier](Python/01_meetPython/10_listBeautifier.py)
     
   - [Slithering in Strings](Python/02_SlitheringinStrings)
+    - [fixMessage](Python/02_SlitheringinStrings/12_fixMessage.py)
+    - [catWalk](Python/02_SlitheringinStrings/13_catWalk.py)
+    - [convertTabs](Python/02_SlitheringinStrings/14_convertTabs.py)
+    - [textwrap](Python/02_SlitheringinStrings/15_textwrap.py)
+    - [checkPalindrome](Python/02_SlitheringinStrings/16_checkPalindrome.py)
+    - [permutationCipher](Python/02_SlitheringinStrings/17_permutationCipher.py)
+    - [competitiveEating](Python/02_SlitheringinStrings/18_competitiveEating.py)
+    - [newStyleFormatting](Python/02_SlitheringinStrings/19_newStyleFormatting.py)
+    - [getCommit](Python/02_SlitheringinStrings/20_getCommit.py)
+    
   - [Lurking in Lists](Python/03_LurkinginLists)
   - [Lambda illusions](Python/04_Lambdaillusions)
   - [Complexity of Comprehension](Python/05_Complexity%20of%20Comprehension)
