@@ -1,5 +1,7 @@
  '''
- implementing a function that will replace all multiple space characters in the given line of your code with single ones. In addition, all leading and trailing whitespaces should be removed.
+ implementing a function that will replace all multiple space characters 
+ in the given line of your code with single ones.
+ In addition, all leading and trailing whitespaces should be removed.
 
 Example
 
