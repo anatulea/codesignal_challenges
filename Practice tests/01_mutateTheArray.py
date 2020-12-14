@@ -29,13 +29,13 @@ def mutateTheArray(n, a):
     # return b
     # [a[0]+a[1]]+[sum(a[x-1:x+2])for x in range(1,len(a))]if n>1 else a
 
-#     for x in range(1,len(a)):
-#         # print(x)
-#         if n>1:
-#            mylist= [a[0]+a[1]]+[sum(a[x-1:x+2])]
-#         else:
-#           mylist =  sum(a[x-1:x+2])
-#     return mylist
+    for x in range(1,len(a)):
+        # print(x)
+        if n>1:
+           mylist= [a[0]+a[1]]+[sum(a[x-1:x+2])]
+        else:
+          mylist =  sum(a[x-1:x+2])
+    return mylist
 # # 
 n = 5 
 a = [4, 0, 1, -2, 3]
