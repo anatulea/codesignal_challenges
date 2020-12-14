@@ -38,6 +38,11 @@
   
   
   - [Lambda illusions](Python/04_Lambdaillusions)
+    - [repeatChar](Python/04_Lambdaillusions/26_repeatChar.py)
+    - [getPoints](Python/04_Lambdaillusions/27_getPoints.py)
+    - [sortStudents](Python/04_Lambdaillusions/28_sortStudents.py)
+    - [isTestSolvable](Python/04_Lambdaillusions/29_isTestSolvable.py)
+  
   - [Complexity of Comprehension](Python/05_Complexity%20of%20Comprehension)
   - [Fumbling in Functional](Python/06_Fumbling%20in%20Functional)
   - [Caravan of Collections](Python/07_Caravan%20of%20Collections)
