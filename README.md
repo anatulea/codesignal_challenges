@@ -9,6 +9,7 @@
 - Gold is provided for solving challenges which can be used to help solve algorithms. If you are able to save a large amount of gold you may buy a t-shirt with it as well.
 
 ## Table of Contents
+
 [Python](Python/) 
   - [Meet Python](Python/01_meetPython)
     - [truthness](Python/01_meetPython/01_truthness.py)
@@ -51,8 +52,31 @@
     - [multiplicationTable](Python/05_Complexity%20of%20Comprehension/34_multiplicationTable.py)
     
   - [Fumbling in Functional](Python/06_Fumbling%20in%20Functional)
+    - [chessTeams](Python/06_Fumbling%20in%20Functional/35_chessTeams.py)
+    - [fixResult](Python/06_Fumbling%20in%20Functional/36_fixResult.py)
+    - [collegeCourses](Python/06_Fumbling%20in%20Functional/37_collegeCourses.py)
+    - [createHistogram](Python/06_Fumbling%20in%20Functional/38_createHistogram.py)
+    - [leastCommonDenominator](Python/06_Fumbling%20in%20Functional/39_leastCommonDenominator.py)
+
   - [Caravan of Collections](Python/07_Caravan%20of%20Collections)
+    - [uniqueCharacters](Python/07_Caravan%20of%20Collections/41_uniqueCharacters.py)
+    - [correctScholarships](Python/07_Caravan%20of%20Collections/42_correctScholarships.py)
+    - [startupName](Python/07_Caravan%20of%20Collections/43_startupName.py)
+    - [wordsRecognition](Python/07_Caravan%20of%20Collections/44_wordsRecognition.py)
+    - [transposeDictionary](Python/07_Caravan%20of%20Collections/45_transposeDictionary.py)
+    - [doddledPassword](Python/07_Caravan%20of%20Collections/46_doddledPassword.py)
+    - [frequencyAnalysis](Python/07_Caravan%20of%20Collections/47_frequencyAnalysis.py)
+
+
   - [Itertools Kit](Python/08_Itertools%20Kit)
+    - [cyclicName](Python/08_Itertools%20Kit/48_cyclicName.py)
+    - [memoryPills](Python/08_Itertools%20Kit/49_memoryPills.py)
+    - [floatRange](Python/08_Itertools%20Kit/50_floatRange.py)
+    - [rockPaperScissors](Python/08_Itertools%20Kit/51_rockPaperScissors.py)
+    - [kthPermutation](Python/08_Itertools%20Kit/52_kthPermutation.py)
+    - [crazyball](Python/08_Itertools%20Kit/53_crazyball.py)
+    - [crackingPassword](Python/08_Itertools%20Kit/54_crackingPassword.py)
+
   - [Drilling the Lists](Python/09_Drilling%20the%20Lists)
   - [Yin and Yang of Yields](Python/10_Yin%20and%20Yang%20of%20Yields)
   - [Higher Order Thinking](Python/11_Higher%20Order%20Thinking)
