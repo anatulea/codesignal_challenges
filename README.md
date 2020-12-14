@@ -10,7 +10,15 @@
 
 ## Table of Contents
 [Python](Python/) 
-  - [Meet Python](Python/01_meetPython) 
+  - [Meet Python](Python/01_meetPython)
+    - [truthness](Python/01_meetPython/01_truthness.py)
+    - [countBits](Python/01_meetPython/05_countBits.py)
+    - [modulus](Python/01_meetPython/06_modulus.py)
+    - [simpleSort](Python/01_meetPython/07_simpleSort.py)
+    - [baseConversion](Python/01_meetPython/08_baseConversion.py)
+    - [mexFunction](Python/01_meetPython/09_mexFunction.py)
+    - [listBeautifier](Python/01_meetPython/10_listBeautifier.py)
+    
   - [Slithering in Strings](Python/02_SlitheringinStrings)
   - [Lurking in Lists](Python/03_LurkinginLists)
   - [Lambda illusions](Python/04_Lambdaillusions)
