@@ -6,7 +6,6 @@ You're not even sure if you should bother to answer the questions. You still hav
 Given the list of question ids, determine if the sum of their digits is divisible by k to see if it's worth trying to pass the test.
 
 Example
-
 For ids = [529665, 909767, 644200] and k = 3, the output should be
 isTestSolvable(ids, k) = true.
 

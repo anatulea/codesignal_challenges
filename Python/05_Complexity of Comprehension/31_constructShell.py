@@ -13,7 +13,6 @@ lst[2 * n - 2] contains one element.
 Given an integer n, return a shell list.
 
 Example
-
 For n = 3, the output should be
 
 constructShell(n) = [[0],

@@ -4,9 +4,7 @@ You are given a list of students who want to apply to the internship at CodeSign
 Your task is to sort the students lexicographically by their surnames. If two students happen to have the same surname, their order in the result should be the same as in the original list.
 
 Example
-
 For
-
 students = ["John Smith", "Jacky Mon Simonoff", 
             "Lucy Smith", "Angela Zimonova"]
 the output should be

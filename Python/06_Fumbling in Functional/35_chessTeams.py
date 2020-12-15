@@ -14,6 +14,12 @@ chessTeams(smarties, cleveries) = [["Jane",  "Oscar"],
 '''
 def chessTeams(smarties, cleveries):
     return list(zip(smarties, cleveries))
+''' 
+    The zip() function takes iterables (can be zero or more), aggregates them in a tuple, and return it.
+            -If we do not pass any parameter, zip() returns an empty iterator
+            -If a single iterable is passed, zip() returns an iterator of tuples with each tuple having only one element.
+            -If multiple iterables are passed, zip() returns an iterator of tuples with each tuple having elements from all the iterables.
+'''
     # return [[a,b] for a,b in zip(smarties,cleveries)]
     # return list(map(lambda x1,x2: list([x1, x2]), smarties, cleveries))
     # return map(list, zip(smarties, cleveries))
