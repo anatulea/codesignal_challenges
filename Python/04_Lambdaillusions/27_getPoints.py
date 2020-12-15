@@ -5,7 +5,7 @@ Your task is to calculate the number of points a student got for some test. Impl
 
 Example
 
-For answers = [true, true, false, true]and p = 2, the output should be
+For answers = [true, true, false, true] and p = 2, the output should be
 getPoints(answers, p) = 5.
 
 Here's why: 1 + 2 - 2 + 4 = 5.
