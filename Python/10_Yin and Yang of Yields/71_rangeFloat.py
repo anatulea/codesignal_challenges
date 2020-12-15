@@ -40,6 +40,9 @@ class FRange(object):
 
     def __iter__(self):
         return self
+     '''
+    The __iter__() function returns an iterator for the given object (array, set, tuple etc. or custom objects). It creates an object that can be accessed one element at a time using __next__() function, which generally comes in handy when dealing with loops.
+    '''
 
     def __next__(self):
         if self.i * self.step < self.stop * self.step:

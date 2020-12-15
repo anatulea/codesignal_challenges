@@ -25,7 +25,7 @@ class CodeSignalUser(object):
         self.user_id = int(args[1])
         self.xp = int(args[2])
         
-    def __lt__(self, other):
+    def __lt__(self, other): #(less than)
         return (self.xp, other.user_id) < (other.xp, self.user_id)
             
     def __str__(self):

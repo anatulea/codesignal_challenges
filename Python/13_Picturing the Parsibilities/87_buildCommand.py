@@ -43,9 +43,14 @@ buildCommand(jsonFile) =
 import json
 def buildCommand(jsonFile):
     data= json.loads(jsonFile)
+    '''json.loads(s, *, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object_pairs_hook=None, **kw):
+            -Deserialize s (a str, bytes or bytearray instance containing a JSON document) to a Python object using this conversion table.'''
+
     print(data)
     for k,v in data.items():
         # print(v)
+        '''isinstance(object, classinfo):
+           - Return True if the object argument is an instance of the classinfo argument'''
         if isinstance(v, str):
             data[k] = ''
         elif isinstance(v, int):
@@ -57,6 +62,9 @@ def buildCommand(jsonFile):
         elif isinstance(v, dict):
             # print(v)
             v2=json.dumps(v)
+            '''json.dumps(obj, *, skipkeys=False, ensure_ascii=True, check_circular=True, allow_nan=True, cls=None, indent=None separators=None, default=None, sort_keys=False, **kw)
+                - Serialize obj to a JSON formatted str using this conversion table. The arguments have the same meaning as in dump().'''
+
             data[k]= json.loads(buildCommand(v2))
     
     print(data)

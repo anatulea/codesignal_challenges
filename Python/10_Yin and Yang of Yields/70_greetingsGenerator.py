@@ -14,16 +14,19 @@ greetingsGenerator(team) = ["Hello, Athos!",
                             '''
 class Greeter(object):
     def __init__(self, names):
-        self.cnt = 0
+        self.count = 0
         self.names = names
 
     def __iter__(self):
         return self
+    '''
+    The __iter__() function returns an iterator for the given object (array, set, tuple etc. or custom objects). It creates an object that can be accessed one element at a time using __next__() function, which generally comes in handy when dealing with loops.
+    '''
 
     def __next__(self):
-        if self.cnt < len(self.names):
-            self.cnt += 1
-            return 'Hello, {}!'.format(self.names[self.cnt - 1])
+        if self.count < len(self.names):
+            self.count += 1
+            return 'Hello, {}!'.format(self.names[self.count - 1])
         else:
             raise StopIteration
 

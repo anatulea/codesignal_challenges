@@ -27,7 +27,14 @@ def mergingVines(vines, n):
 
     return sumOnce(vines)
 
-    '''
+'''
+    Decorators (ex: @nTimes(n)) are very powerful and useful tool in Python since it allows programmers to modify the behavior of function or class. Decorators allow us to wrap another function in order to extend the behavior of wrapped function, without permanently modifying it.
+
+    In Decorators, functions are taken as the argument into another function and then called inside the wrapper function.
+'''
+
+
+'''
     def mergingVines(vines, n):
     def nTimes(n):
         def func_decor(func):
@@ -47,4 +54,4 @@ def mergingVines(vines, n):
         return res
 
     return sumOnce(vines)
-    '''
+'''

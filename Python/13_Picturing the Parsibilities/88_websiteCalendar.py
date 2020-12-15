@@ -82,8 +82,13 @@ import calendar
 def websiteCalendar(month, year):
 
     hc = calendar.HTMLCalendar(calendar.MONDAY)
+    '''calendar.HTMLCalendar(firstweekday=0)¶
+          - This class can be used to generate HTML calendars.'''
+
     str = hc.formatmonth(year, month)
-    
+    '''formatmonth(theyear, themonth, withyear=True)
+           - Return a month’s calendar as an HTML table. If withyear is true the year will be included in the header, otherwise just the month name will be used.'''
+           
     return str.replace('\t', '').replace('\n', '')
     
 '''

@@ -13,3 +13,10 @@ tryFunctions(x, functions) = [0.84147, 0.5403, 2, 1].
 def tryFunctions(x, functions):
     return [eval(f)(x) for f in functions]
     # return  [fun(x) for fun in map(eval,functions)]
+    
+    '''eval(expression, globals=None, locals=None)
+            -expression - the string parsed and evaluated as a Python expression
+            -globals (optional) - a dictionary
+            -locals (optional)- a mapping object. Dictionary is the standard and commonly used mapping type in Python.
+        -The eval() method parses the expression passed to this method and runs python expression (code) within the program
+    '''
