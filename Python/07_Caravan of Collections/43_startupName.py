@@ -21,5 +21,5 @@ def startupName(companies):
     cmp3 = set(companies[2])
     res = set((cmp1&cmp2 | cmp1&cmp3 | cmp2&cmp3) - (cmp1&cmp2&cmp3))
     # res = ((comp1 | comp2 | comp3) - (comp1 ^ comp2 ^comp3))
-    #  res = ((cmp1&cmp2) | (cmp1&cmp3) | (cmp2&cmp3)) - (cmp1&cmp2&cmp3)
+    # res = ((cmp1&cmp2) | (cmp1&cmp3) | (cmp2&cmp3)) - (cmp1&cmp2&cmp3)
     return list(sorted(list(res)))

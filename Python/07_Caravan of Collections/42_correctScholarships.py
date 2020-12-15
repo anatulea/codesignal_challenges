@@ -4,7 +4,6 @@ For the upcoming academic year the Coolcoders University should decide which stu
 You are given lists of unique student ids bestStudents, scholarships and allStudents, representing ids of the best students, students that will get a scholarship and all the students in the university, respectively. Return true if the scholarships are correctly distributed and false otherwise.
 
 Example
-
 For bestStudents = [3, 5], scholarships = [3, 5, 7], and
 allStudents = [1, 2, 3, 4, 5, 6, 7], the output should be
 correctScholarships(bestStudents, scholarships, allStudents) = true;
