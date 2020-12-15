@@ -45,11 +45,12 @@ xmlTags(xml) =
 
 '''
 import xml.etree.ElementTree as ET
+#The xml.etree.ElementTree module implements a simple and efficient API for parsing and creating XML data.
 def xmlTags(xml):
-    root = ET.fromstring(xml)
+    root = ET.fromstring(xml) #fromstring(text, parser=None) Parses an XML section from a string constant. Returns an Element instance
     dictionary = dict()
-    for node in root.iter():
-        dictionary.setdefault(node.tag, set()).update(node.keys())
+    for node in root.iter(): # iter(tag=None) Creates a tree iterator with the current element as the root. The iterator iterates over this element and all elements below it, in document (depth first) order.
+        dictionary.setdefault(node.tag, set()).update(node.keys()) # setdefault() method returns the value of a key (if the key is in dictionary). If not, it inserts key with a value to the dictionary.
     test = process(root)
     
     final = []

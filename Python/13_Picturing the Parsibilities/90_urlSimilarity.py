@@ -33,6 +33,9 @@ from itertools import takewhile
 def urlSimilarity(url1, url2):
     first_url = urlparse(url1)
     second_url = urlparse(url2)
+    '''urlparse(urlstring, scheme='', allow_fragments=True)
+            - Parse a URL into six components, returning a 6-item named tuple. '''
+
     count = (first_url.scheme == second_url.scheme) * 5 + (first_url.netloc == second_url.netloc) * 10
         
     path1 = first_url.path.split('/')[1:]
@@ -41,6 +44,8 @@ def urlSimilarity(url1, url2):
     
     query1 = parse_qs(first_url.query)
     query2 = parse_qs(second_url.query)
+    '''parse_qs(qs, keep_blank_values=False, strict_parsing=False, encoding='utf-8', errors='replace', max_num_fields=None)
+            - Parse a query string given as a string argument (data of type application/x-www-form-urlencoded). Data are returned as a dictionary. The dictionary keys are the unique query variable names and the values are lists of values for each name.'''
     count += sum(2 if query1[q] == query2[q] else 1 for q in query1.keys() & query2.keys())
         
     return count

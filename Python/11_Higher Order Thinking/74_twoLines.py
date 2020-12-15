@@ -34,3 +34,7 @@ def twoLines(line1, line2, l, r):
     if balance < 0:
         return "second"
     return "any"
+    '''
+    Partial functions allow us to fix a certain number of arguments of a function and generate a new function.
+    Partial functions can be used to derive specialized functions from general functions and therefore help us to reuse our code
+    '''
