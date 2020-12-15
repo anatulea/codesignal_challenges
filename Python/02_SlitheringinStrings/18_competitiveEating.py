@@ -10,6 +10,6 @@ competitiveEating(t, width, precision) = "   3.14   "
 '''
 def competitiveEating(t, width, precision):
     return str(f"%.{precision}f"%t).center(width)
+    # string.center()	Center-justify in a field of given width.
 
-
-# string.center()	Center-justify in a field of given width.
+    # return "{0:^{a}.{b}f}".format(t,a=width,b=precision)

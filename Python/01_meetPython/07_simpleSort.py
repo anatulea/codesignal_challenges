@@ -18,5 +18,10 @@ def simpleSort(arr):
         while j < stop - 1:
             if arr[j] > arr[j + 1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+
+                # long swap
+                # swap = arr[j+1]
+                # arr[j+1] =arr[j]
+                # arr[j] =  swap
             j += 1
     return arr

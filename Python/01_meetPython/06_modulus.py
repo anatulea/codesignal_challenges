@@ -13,6 +13,8 @@ modulus(n) = -1.
 '''
 def modulus(n):
     if isinstance(n, int):
-        return n % 2
+    # if  type(n) is int:
+        return n % 2  # the Modulo Operator returns the remainder of dividing the left hand operand by right hand operand.
     else:
         return -1
+
