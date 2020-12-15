@@ -18,3 +18,5 @@ from itertools import combinations
 def crazyball(players, k):
     return sorted(combinations(sorted(players), k))
 # return list(combinations(sorted(players), k))
+'''Combinations('ABCD', 2) -> AB AC AD BC BD CD: 
+    - This iterator prints all the possible combinations(without replacement) of the container passed in arguments in the specified group size in sorted order.'''

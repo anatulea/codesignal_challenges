@@ -9,8 +9,13 @@ For name = "nicecoder" and n = 15, the output should be
 cyclicName(name, n) = "nicecoderniceco".
 '''
 from itertools import cycle
-
+# Itertools is a module that provides various functions that work on iterators to produce complex iterators.
 def cyclicName(name, n):
-    gen = cycle(name)
-    res = [next(gen) for _ in range(n)]
-    return ''.join(res)
+    gen = cycle(name) # defining iterator 
+    res = [next(gen) for _ in range(n)]  # Using next function to take the first n char
+    return ''.join(res) 
+
+'''  Infinite iterators
+        - count(start, step): This iterator starts printing from the “start” number and prints infinitely. If steps are mentioned, the numbers are skipped else step is 1 by default.
+        
+'''

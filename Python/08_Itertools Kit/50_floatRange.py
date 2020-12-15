@@ -17,3 +17,10 @@ def floatRange(start, stop, step):
     gen = takewhile(lambda x: x< stop, count(start, step))
 
     return list(gen)
+
+''' takewhile(func, iterable): 
+        -This iterator is opposite of dropwhile(), it prints the values till the function returns false for 1st time.
+    
+    count(start, step): 
+        -This iterator starts printing from the “start” number and prints infinitely. If steps are mentioned, the numbers are skipped else step is 1 by default. See the below example for its use with for in loop.
+'''
