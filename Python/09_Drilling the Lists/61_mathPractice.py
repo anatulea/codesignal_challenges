@@ -11,7 +11,9 @@ mathPractice(numbers) = 71.
 
 Here's how the answer is obtained: ((1 + 2) * 3 + 4) * 5 + 6 = 71.
 '''
+import functools
 # reduce(function, iterable, initializer=None)
+
 def mathPractice(numbers):
     return functools.reduce(lambda x,y: (x+y[1]) if y[0]%2 else x*y[1], enumerate(numbers), 1)
     # return reduce(lambda x,y: x*y if numbers.index(y)%2==0 else x+y, numbers)
@@ -19,7 +21,7 @@ def mathPractice(numbers):
     # return reduce(lambda z,(x,y):z*x+y, zip(numbers[::2],numbers[1::2]+[0]), 1)
     # return functools.reduce(lambda s, a: s+numbers[a] if a%2==1 else s*numbers[a], range(1, len(numbers)), numbers[0])
     
-from functools import reduce
+
 
 def my_func(x, y):
     if y[0]%2:
@@ -32,7 +34,7 @@ def mathPractice2(numbers):
     it = iter(enumerate(numbers))
     value = 1
     
-    value = reduce(my_func, it, value)
+    value = functools.reduce(my_func, it, value)
     # value = reduce(lambda x, y: (x+y[1]) if y[0]%2 else x*y[1], it, value)
 
     return value

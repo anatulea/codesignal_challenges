@@ -11,9 +11,7 @@ Not long ago a young Christmas elf asked you to implement a function that create
 Unfortunately because of the extreme coldness the tree that you sent over was corrupted: although its lines are given in the correct order, but are not aligned properly. Now your task is to fix the given tree by centering the asterisks in each line.
 
 Example
-
 For
-
 tree = [
   "      *  ", 
   "    *    ", 
