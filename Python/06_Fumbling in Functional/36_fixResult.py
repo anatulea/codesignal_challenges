@@ -14,3 +14,8 @@ def fixResult(result):
         return x // 10
 
     return list(map(fix, result))
+'''
+The map() function applies a given function to each item of an iterable (list, tuple etc.) and returns a list of the results.
+        - map(function, iterable, ...)
+        - The returned value from map() (map object) can then be passed to functions like list() (to create a list), set() (to create a set) and so on.
+'''

@@ -16,3 +16,16 @@ def collegeCourses(x, courses):
 
     return list(filter(shouldConsider, courses))
     # return filter(shouldConsider, courses)
+'''
+The filter() method constructs an iterator from elements of an iterable for which a function returns true.
+--filter(function, iterable)
+
+filter() method is equivalent to:
+
+# when function is defined
+(element for element in iterable if function(element))
+
+# when function is None
+(element for element in iterable if element)
+
+'''
