@@ -13,12 +13,12 @@ def listsConcatenation(lst1, lst2):
     res += lst2
     return res
 
-def listsConcatenation(lst1, lst2):
+def listsConcatenation2(lst1, lst2):
     res = lst1
     res.extend(lst2)
     return res
 
-def listsConcatenation(lst1, lst2):
+def listsConcatenation3(lst1, lst2):
     res = lst1
     
     for i in lst2:

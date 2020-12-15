@@ -10,18 +10,21 @@ twoTeams(students) = 11.
 
 Students with numbers 1, 13 and 14 will join team A, and students with numbers 11 and 6 will join team B. Thus, the answer is (1 + 13 + 14) - (11 + 6) = 11.
 '''
+from functools import reduce
 def twoTeams(students):
     return sum(students[0::2])- sum(students[1::2])
 
-def twoTeams(students):
+def twoTeams2(students):
     return sum( (-1)**i*I for i,I in enumerate(students))
 
 
-def twoTeams(students):
+def twoTeams3(students):
     return sum([students[i] if i % 2 == 0 else -students[i] for i in range(0, len(students))])
 
-def twoTeams(students):
+def twoTeams4(students):
     return reduce(lambda x,y:x+y[1] if y[0]%2==0 else x-y[1],enumerate(students),0)
+    '''functools.reduce(function, iterable[, initializer]):
+    Apply function of two arguments cumulatively to the items of iterable, from left to right, so as to reduce the iterable to a single value. '''
 
-def twoTeams(students):
+def twoTeams5(students):
     return sum([s for index,s in enumerate(students) if index%2==0])-sum([s for index,s in enumerate(students) if index%2!=0])

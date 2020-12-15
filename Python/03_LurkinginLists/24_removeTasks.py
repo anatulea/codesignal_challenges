@@ -10,10 +10,13 @@ the output should be
 removeTasks(k, toDo) = [1237, 2847, 2947, 1, 374827, 22].
 '''
 def removeTasks(k, toDo):
-    del toDo[k-1:len(toDo):k] # specify step as [start:stop:step].
+    del toDo[k-1:len(toDo):k] # specify step as [start:stop:step].  removes the elements of s[i:j:k] from the list
+    # del s[i:j] same as s[i:j] = []
     return toDo
+    '''del d[key]
+    Remove d[key] from d. Raises a KeyError if key is not in the map.
+    '''
 
-
-def removeTasks(k, toDo):
+def removeTasks2(k, toDo):
     del toDo[k - 1::k]
     return toDo
