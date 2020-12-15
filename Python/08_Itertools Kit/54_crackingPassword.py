@@ -26,6 +26,11 @@ def crackingPassword(digits, k, d):
 # return list(filter(lambda x: int(x) % d == 0, map(createNumber, product(sorted(digits), repeat = k))))
 # return sorted(ifilter(lambda n: int(n) % d == 0, imap(createNumber, product(digits, repeat=k)))) 
 
+'''
+Product('ABCD', repeat=2) -> AA AB AC AD BA BB BC BD CA CB CC CD DA DB DC DD: 
+    -This tool computes the cartesian product of input iterables. To compute the product of an iterable with itself, we use the optional repeat keyword argument to specify the number of repetitions. The output of this function are tuples in sorted order.
+'''
+
 def crackingPassword2(digits, k, d):
     def createNumber(digs):
         return "".join(map(str, digs))

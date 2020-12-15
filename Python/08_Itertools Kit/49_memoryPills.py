@@ -15,7 +15,19 @@ from itertools import dropwhile, cycle, chain, repeat
 
 def memoryPills(pills):
     gen = dropwhile(lambda x: len(x) % 2 != 0, pills + [''] * 3)
-    # gen = chain(dropwhile(lambda x: len(x)%2 > 0,pills),cycle([""]))
+    '''dropwhile(func, seq): 
+            - This iterator starts printing the characters only after the func. in argument returns false for the first time.'''
+    # gen = chain(dropwhile(lambda x: len(x)%2 > 0,pills), cycle([""]))
     # gen = chain(dropwhile(lambda x: len(x) % 2, pills), repeat(""))
+    '''chain(iter1, iter2..): 
+                 - This function is used to print all the values in iterable targets one after another mentioned in its arguments.
+        cycle(iterable): 
+                -This iterator prints all values in order from the passed container. It restarts printing from the beginning again when all elements are printed in a cyclic manner.
+        repeat(val, num): 
+                -This iterator repeatedly prints the passed value infinite number of times. If the optional keyword num is mentioned, then it repeatedly prints num number of times. 
+    '''
     next(gen)
     return [next(gen) for _ in range(3)]
+
+pills = ["Notforgetan", "Antimoron", "Rememberin", "Bestmedicen", "Superpillsus"]    
+print(memoryPills(pills))

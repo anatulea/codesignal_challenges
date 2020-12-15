@@ -19,3 +19,9 @@ def frequencyAnalysis(encryptedText):
     return max(Counter(encryptedText), key= Counter(encryptedText).get)
     # return Counter(encryptedText).most_common(1)[0][0]
     # return sorted(encryptedText, key=encryptedText.count, reverse=True)[0]
+''' Counter() returns a dictionary data structure which contains characters of input as key and their frequencies as it's corresponding value.
+   Counter objects support three methods beyond those available for all dictionaries:
+        - elements():  Return an iterator over elements repeating each as many times as its count.
+        - most_common([n]):  Return a list of the n most common elements and their counts from the most common to the least. 
+        - subtract([iterable-or-mapping]):  Elements are subtracted from an iterable or from another mapping (or counter). 
+'''

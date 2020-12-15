@@ -16,21 +16,16 @@ Here are the first 4 permutations:
 [1, 2, 3, 5, 4]
 [1, 2, 4, 3, 5]
 [1, 2, 4, 5, 3]
-Input/Output
-
-[execution time limit] 4 seconds (py3)
-
-[input] array.integer numbers
-
-A sorted list of distinct integers.
-
-Guaranteed constraints:
-2 ≤ numbers.length ≤ 10,
-1 ≤ numbers[i] ≤ 1000.
-
 '''
 from itertools import permutations, islice
 
 def kthPermutation(numbers, k):
     return next(islice(permutations(numbers), k-1, None), numbers)
     # return list(permutations(numbers,len(numbers)))[k-1]
+'''
+    islice(iterable, start, stop, step): 
+        -This iterator selectively prints the values mentioned in its iterable container passed as argument. This iterator takes 4 arguments, iterable container, starting pos., ending position and step.
+        
+    next(iterator, default):
+        -The next() function returns the next item from the iterator.
+'''

@@ -18,3 +18,7 @@ def rockPaperScissors(players):
     # return list(permutations(sorted(players), 2))
     # return sorted(permutations(players, 2))
     # return list(permutations(sorted(players), 2))
+'''
+    Permutations():
+        - Permutations() as the name speaks for itself is used to generate all possible permutations of an iterable. All elements are treated as unique based on their position and not their values. This function takes an iterable and group_size, if the value of group_size is not specified or is equal to None then the value of group_size becomes length of the iterable.
+'''
