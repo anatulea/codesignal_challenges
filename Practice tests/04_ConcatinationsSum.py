@@ -30,16 +30,20 @@ The total result is 11 + 12 + 13 + 21 + 22 + 23 + 31 + 32 + 33 = 198.
 '''
 
 def concatenationsSum(a):
-   t=sum(a)
+    t=sum(a)
     t1=t*len(a)
     t2=sum([t*[len(str(x))-1 for x in a].count(j)*10**(j+1) for j in range(7)])
     return t1+t2
 
 
-def concatenationsSum(a):
+def concatenationsSum2(a):
     sum = 0
     for i in range(len(a)):
         for j in range(len(a)):
             prod = str(a[i]) + str(a[j])
             sum += int(prod)
     return sum
+a = [10, 2]
+print(concatenationsSum2(a)) #1344
+a = [1, 2, 3]
+print(concatenationsSum2(a)) #198

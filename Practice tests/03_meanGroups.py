@@ -58,7 +58,7 @@ def meanGroups(a):
     table ={}
     for idx, i in enumerate(a):
         mean = sum(i)/len(i)
-        # print(idx)
+        print(mean) # 3.0 4.0 2.5 2.5 3.0
         if mean not in table:
             table[mean]= [idx]
         else:
@@ -66,8 +66,14 @@ def meanGroups(a):
             
     return list(table.values())
 
+a = [[3, 3, 4, 2],
+     [4, 4],
+     [4, 0, 3, 3],
+     [2, 3],
+     [3, 3, 3]]
+print(meanGroups(a)) #[[0, 4], [1], [2, 3]]
 
-def meanGrups(a):
+def meanGrups2(a):
     d, e = [], []
     for i, j in enumerate(a):
         if sum(j)/len(j) not in e:
