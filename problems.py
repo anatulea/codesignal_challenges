@@ -37,7 +37,7 @@ def concatenationsSum(a):
     t2=sum([t*[len(str(x))-1 for x in a].count(j)*10**(j+1) for j in range(7)])
     return t1+t2
 
-def concatenationsSum(a): # does not pass all the tests in codesignal
+def concatenationsSum2(a): # does not pass all the tests in codesignal
     sum = 0
     for i in range(len(a)):
         for j in range(len(a)):
@@ -99,7 +99,7 @@ def alternatingSort(a):
         l=a[c]
     return True
 
-def alternatingSort(a):
+def alternatingSort2(a):
     current = 0
     last = a[0]
     while current != (len(a)-1)//2:
@@ -113,18 +113,6 @@ def alternatingSort(a):
         last = a[current]
     return True    
 
-
-
-def mergeStrings(s1, s2):
-    s,o1,o2='',s1,s2
-    while len(s1)*len(s2)!=0:
-        if o1.count(s1[0])>o2.count(s2[0]) or (o1.count(s1[0])==o2.count(s2[0]) and s1[0]>s2[0]):
-            s+=s2[0]
-            s2=s2[1:]
-        else:
-            s+=s1[0]
-            s1=s1[1:]
-    return s+s1+s2
 
 
 
@@ -143,10 +131,10 @@ def hashMap(queryType, query):
 
 
 
-def hashMap(queryType, queryType):
+def hashMap2(queryType1, query):
     hash_dict= {}
     get_total = 0
-    for i, prompt in enumerate(queryType):
+    for i, prompt in enumerate(queryType1):
         if prompt == 'insert':
             hash_dict[query[i][0]] == query[i][1]
         elif prompt =='addValue':
@@ -194,8 +182,18 @@ def firstNonRepeatingCharacters(s):
     return res
 
 
-
 def mergeStrings(s1, s2):
+    s,o1,o2='',s1,s2
+    while len(s1)*len(s2)!=0:
+        if o1.count(s1[0])>o2.count(s2[0]) or (o1.count(s1[0])==o2.count(s2[0]) and s1[0]>s2[0]):
+            s+=s2[0]
+            s2=s2[1:]
+        else:
+            s+=s1[0]
+            s1=s1[1:]
+    return s+s1+s2
+
+def mergeStrings2(s1, s2):
     count1 = {}
     for i in s1:
         try:
@@ -341,7 +339,7 @@ def allLongestStrings(inputArray):
             continue
     return result
 
-def allLongestStrings(inputArray):
+def allLongestStrings2(inputArray):
     result = list()
     max_str_len = 0
     for i in inputArray:
@@ -354,7 +352,7 @@ def allLongestStrings(inputArray):
 
     return result
 
-def allLongestStrings(inputArray):
+def allLongestStrings3(inputArray):
     m = max(len(s) for s in inputArray)
     r = [s for s in inputArray if len(s) == m]
     return r
@@ -372,7 +370,7 @@ Strings have 3 common characters – 2 “a”s and 1 “c”.
 
 def commonCharacterCount(s1, s2):
     count = 0
-    for i in range(0, len(s1):
+    for i in range(0, len(s1)):
         for j in range (0, len(s2)):
             if s1[i]== s2[j]:
                 count+=1
@@ -380,7 +378,7 @@ def commonCharacterCount(s1, s2):
                 break
     return count
 
-def commonCharacterCount(s1, s2):
+def commonCharacterCount2(s1, s2):
     s1_list=list(s1)
     s2_list=list(s2)
     common=0
@@ -415,7 +413,7 @@ def reverseInParenthesis(s):
     for i in range(len(s)):
         if s[i]=="(":
             start = i
-        if s[i]==")"
+        if s[i]==")":
             end = i
             return reverseInParenthesis(s[:start]+s[start+1 : end][::-1]+s[end+1])
     return s
@@ -470,7 +468,7 @@ Example
 For inputArray = [1, 1, 1], the output should be
 arrayChange(inputArray) = 3.
 '''
- def arrayChange(inputArray):
+def arrayChange(inputArray):
     c =  0
     for i in range(1, len(inputArray)):
         if inputArray[i]<= inputArray[i-1]:
@@ -479,7 +477,7 @@ arrayChange(inputArray) = 3.
     return c
  
  
- '''
+'''
  Given a string, find out if its characters can be rearranged to form a palindrome.
 
 Example
@@ -489,7 +487,7 @@ palindromeRearranging(inputString) = true.
 
 We can rearrange "aabb" to make "abba", which is a palindrome.
 '''
- def palindromeRearranging(inputstring):
+def palindromeRearranging(inputstring):
     char = set(inputstring)
     t =False
     for x in char:
@@ -499,4 +497,78 @@ We can rearrange "aabb" to make "abba", which is a palindrome.
             t= True
     return True
 
- 
+
+
+def areEquallyStrong(yourLeft, yourRight, friendsLeft, friendsRight):
+    if (yourLeft == friendsLeft) and (yourRight ==  friendsRight):
+        return True
+    elif(yourRight == friendsLeft) and (yourLeft == friendsRight):
+        return True
+    else:
+        False
+
+'''
+Given an array of integers, find the maximal absolute difference between any two of its adjacent elements.
+
+Example
+
+For inputArray = [2, 4, 1, 0], the output should be
+arrayMaximalAdjacentDifference(inputArray) = 3.'''
+def arrayMaximumAdjacentDifference(inputArray):
+    max_num = 0
+    for i in range(len(inputArray)-1):
+        adj_diff= abs(inputArray[i]- inputArray[i+1])
+        if max_num < adj_diff:
+            max_num = adj_diff
+    return max_num
+
+'''
+An IP address is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication. There are two versions of the Internet protocol, and thus two versions of addresses. One of them is the IPv4 address.
+
+Given a string, find out if it satisfies the IPv4 address naming rules.
+
+Example
+
+For inputString = "172.16.254.1", the output should be
+isIPv4Address(inputString) = true;
+
+For inputString = "172.316.254.1", the output should be
+isIPv4Address(inputString) = false.
+
+316 is not in range [0, 255].
+
+For inputString = ".254.255.0", the output should be
+isIPv4Address(inputString) = false.
+
+There is no first number.'''
+def isIPv4Address(inputString):
+    ip = inputString.split(".")
+    l = len(ip)
+    test = []
+    if l!=4:
+        return False
+    for i in range(256):
+        test.append(str(i))
+    for j in range(l):
+        if ip[j] not in test:
+            return False
+    return True
+
+'''
+You are given an array of integers representing coordinates of obstacles situated on a straight line.
+
+Assume that you are jumping from the point with coordinate 0 to the right. You are allowed only to make jumps of the same length represented by some integer.
+
+Find the minimal length of the jump enough to avoid all the obstacles.
+
+Example
+
+For inputArray = [5, 3, 6, 7, 9], the output should be
+avoidObstacles(inputArray) = 4.'''
+
+def avoidObstacles(inputArray):
+    c =2
+    while True:
+        if sorted([i%c for i in inputArray][0]>0):
+            return c
+        c+=1
