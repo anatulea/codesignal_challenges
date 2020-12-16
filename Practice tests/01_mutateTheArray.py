@@ -16,27 +16,33 @@ b[4] = a[3] + a[4] + 0 = (-2) + 3 + 0 = 1
 So, the resulting array after the mutation will be [4, 5, -1, 2, 1].
 '''
 def mutateTheArray(n, a):
-    # b=[None]*n
-    # for i in range(0,len(a)):
-    #     # print(i)
-    #     print(n-1)
-    #     if i == 0 :
-    #         b[i] = 0 + a[i] + a[i+1] 
-    #     elif i == n-1:
-    #         b[i] = a[i-1] + a[i] + 0
-    #     else:
-    #         b[i] = a[i-1] + a[i] + a[i+1]
-    # return b
-    # [a[0]+a[1]]+[sum(a[x-1:x+2])for x in range(1,len(a))]if n>1 else a
-
+    # [a[0]+a[1]]+[sum(a[x-1:x+2])for x in range(1,len(a))]if n>1 else a # one line solution
+    if n <= 1:
+        return a
+    mylist =[a[0]+a[1]]
     for x in range(1,len(a)):
-        # print(x)
+        print(x)
         if n>1:
-           mylist= [a[0]+a[1]]+[sum(a[x-1:x+2])]
+           mylist.append(sum(a[x-1:x+2]))
         else:
-          mylist =  sum(a[x-1:x+2])
+          mylist = a
     return mylist
-# # 
+
 n = 5 
 a = [4, 0, 1, -2, 3]
 print(mutateTheArray(n, a)) #[4, 5, -1, 2, 1]
+n = 1 
+a = [4]
+print(mutateTheArray(n, a))#[4]
+n = 0 
+a = []
+print(mutateTheArray(n, a))#[]
+n = 2 
+a = [9,3]
+print(mutateTheArray(n, a))#[12,12]
+n = 3 
+a = [3,3,3]
+print(mutateTheArray(n, a))# [6, 9, 6]
+
+
+# let b = a.map( (e, i, arr) => (arr[i-1] || 0)+arr[i]+(arr[i+1] || 0) ); javascript
