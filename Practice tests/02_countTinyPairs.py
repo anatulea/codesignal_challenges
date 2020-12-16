@@ -36,3 +36,7 @@ def countTinyPairs(a, b, k):
             count+=0 
     return count
     # return sum([1 if int(str(x)+str(y))<k else 0for x,y in zip(a,b[::-1])])
+a = [16, 1, 4, 2, 14]
+b = [7, 11, 2, 0, 15]
+k = 743
+print(countTinyPairs(a, b, k)) # 4
