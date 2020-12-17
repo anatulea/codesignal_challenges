@@ -14,7 +14,7 @@
 
 [JavaScript](JavaScript/) 
 
-[Practice Tests](Practice%20Tests/) 
+[Practice Tests](Practice%20tests/) 
 
 [The Core](The%20Core/) 
 
