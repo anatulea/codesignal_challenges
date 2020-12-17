@@ -10,9 +10,13 @@
 
 ## Table of Contents
 
--[Python](Python/) 
--[JavaScript](JavaScript/) 
--[Practice Tests](Practice%20Tests/) 
--[The Core](The%20Core/) 
--[Interview Questions](Interview%20Questions/) 
+[Python](Python/) 
+
+[JavaScript](JavaScript/) 
+
+[Practice Tests](Practice%20Tests/) 
+
+[The Core](The%20Core/) 
+
+[Interview Questions](Interview%20Questions/) 
  
