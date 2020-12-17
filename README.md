@@ -104,7 +104,7 @@
   
   - [Showing Class](Python/12_Showing%20Class)
     - [countVisitors](Python/12_Showing%20Class/78_countVisitors.py)
-    - [79_sign.py](Python/12_Showing%20Class/79_sign.py)
+    - [sign](Python/12_Showing%20Class/79_sign.py)
     - [primarySchool](Python/12_Showing%20Class/80_primarySchool.py)
     - [userAttribute](Python/12_Showing%20Class/81_userAttribute.py)
     - [sortCodesignalUsers](Python/12_Showing%20Class/82_sortCodesignalUsers.py)
@@ -113,3 +113,10 @@
     - [toHumanAge](Python/12_Showing%20Class/85_toHumanAge.py)
 
   - [Picturing the Parsibilities](Python/13_Picturing%20the%20Parsibilities)
+    - [xmlTags](Python/13_Picturing%20the%20Parsibilities/86_xmlTags.py)
+    - [buildCommand](Python/13_Picturing%20the%20Parsibilities/87_buildCommand.py)
+    - [websiteCalendar](Python/13_Picturing%20the%20Parsibilities/88_websiteCalendar.py)
+    - [maliciousProgram](Python/13_Picturing%20the%20Parsibilities/89_maliciousProgram.py)
+    - [urlSimilarity](Python/13_Picturing%20the%20Parsibilities/90_urlSimilarity.py)
+    - [pageComplexity](Python/13_Picturing%20the%20Parsibilities/91_pageComplexity.py)
+    - [weirdEncoding](Python/13_Picturing%20the%20Parsibilities/92_weirdEncoding.py)
