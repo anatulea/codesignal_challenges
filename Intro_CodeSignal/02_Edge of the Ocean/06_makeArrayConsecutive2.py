@@ -45,5 +45,5 @@ myarr=[0,3,4,5,6]
 print(makeArrayConsecutive2(myarr))
 
 # One line 
-def makeArrayConsecutive2(statues):
+def makeArrayConsecutive21(statues):
     return max(statues)-min(statues)-len(statues)+1

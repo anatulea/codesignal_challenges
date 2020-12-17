@@ -28,7 +28,7 @@ def centuryFromYear(year):
 
     # return int((year - 1) / 100) + 1
     
- '''The Math.ceil() function always rounds a number up to the next largest integer.'''
+'''The Math.ceil() function always rounds a number up to the next largest integer.'''
     # return math.ceil(year/100)
 
 #     if year % 100 == 0:
@@ -38,12 +38,12 @@ def centuryFromYear(year):
     
 
 #  my solution 
-def centuryFromYear(year):
+def centuryFromYear2(year):
     if 1>= year or year<= 100:
         return 1
     if year>= 2005:
         return 21
-    x = int(str(year)[:2])
+    # x = int(str(year)[:2])
     
     if int(str(year)[2:]) == 00 or int(str(year)[2:]) == 0:
         return int(str(year)[:-2])
