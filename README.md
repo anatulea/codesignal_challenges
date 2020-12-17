@@ -85,8 +85,16 @@
      - [fibonacciList](Python/09_Drilling%20the%20Lists/63_fibonacciList.py)
      - [primesSum](Python/09_Drilling%20the%20Lists/64_primesSum.py)
      
-     
   - [Yin and Yang of Yields](Python/10_Yin%20and%20Yang%20of%20Yields)
+    - [calcBonuses](Python/10_Yin%20and%20Yang%20of%20Yields/65_calcBonuses.py)
+    - [calcFinalScore](Python/10_Yin%20and%20Yang%20of%20Yields/66_calcFinalScore.py)
+    - [fibonacciGenerator](Python/10_Yin%20and%20Yang%20of%20Yields/67_fibonacciGenerator)
+    - [calkinWilfSequence](Python/10_Yin%20and%20Yang%20of%20Yields/68_calkinWilfSequence.py)
+    - [checkPassword](Python/10_Yin%20and%20Yang%20of%20Yields/69_checkPassword.py)
+    - [greetingsGenerator](Python/10_Yin%20and%20Yang%20of%20Yields/70_greetingsGenerator.py)
+    - [rangeFloat](Python/10_Yin%20and%20Yang%20of%20Yields/71_rangeFloat.py)
+    - [superPrize](Python/10_Yin%20and%20Yang%20of%20Yields/72_superPrize.py)
+    
   - [Higher Order Thinking](Python/11_Higher%20Order%20Thinking)
   - [Showing Class](Python/12_Showing%20Class)
   - [Picturing the Parsibilities](Python/13_Picturing%20the%20Parsibilities)
