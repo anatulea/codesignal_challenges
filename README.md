@@ -103,4 +103,13 @@
     - [mergingVines](Python/11_Higher%20Order%20Thinking/77_mergingVines.py)
   
   - [Showing Class](Python/12_Showing%20Class)
+    - [countVisitors](Python/12_Showing%20Class/78_countVisitors.py)
+    - [79_sign.py](Python/12_Showing%20Class/79_sign.py)
+    - [primarySchool](Python/12_Showing%20Class/80_primarySchool.py)
+    - [userAttribute](Python/12_Showing%20Class/81_userAttribute.py)
+    - [sortCodesignalUsers](Python/12_Showing%20Class/82_sortCodesignalUsers.py)
+    - [isCoolTeam](Python/12_Showing%20Class/83_isCoolTeam.py)
+    - [createDie](Python/12_Showing%20Class/84_createDie.py)
+    - [toHumanAge](Python/12_Showing%20Class/85_toHumanAge.py)
+
   - [Picturing the Parsibilities](Python/13_Picturing%20the%20Parsibilities)
