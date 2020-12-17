@@ -78,6 +78,14 @@
     - [crackingPassword](Python/08_Itertools%20Kit/54_crackingPassword.py)
 
   - [Drilling the Lists](Python/09_Drilling%20the%20Lists)
+     - [fixTree](Python/09_Drilling%20the%20Lists/59_fixTree.py)
+     - [prefSum](Python/09_Drilling%20the%20Lists/60_prefSum.py)
+     - [mathPractice](Python/09_Drilling%20the%20Lists/61_mathPractice.py)
+     - [checkParticipants](Python/09_Drilling%20the%20Lists/62_checkParticipants.py)
+     - [fibonacciList](Python/09_Drilling%20the%20Lists/63_fibonacciList.py)
+     - [primesSum](Python/09_Drilling%20the%20Lists/64_primesSum.py)
+     
+     
   - [Yin and Yang of Yields](Python/10_Yin%20and%20Yang%20of%20Yields)
   - [Higher Order Thinking](Python/11_Higher%20Order%20Thinking)
   - [Showing Class](Python/12_Showing%20Class)
