@@ -18,5 +18,5 @@
 
 [The Core](The%20Core/) 
 
-[Interview Questions](Interview%20Questions/) 
+[Interview Questions](Interview%20Practice/) 
  
