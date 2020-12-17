@@ -96,5 +96,11 @@
     - [superPrize](Python/10_Yin%20and%20Yang%20of%20Yields/72_superPrize.py)
     
   - [Higher Order Thinking](Python/11_Higher%20Order%20Thinking)
+    - [tryFunctions](Python/11_Higher%20Order%20Thinking/73_tryFunctions.py)
+    - [twoLines](Python/11_Higher%20Order%20Thinking/74_twoLines.py)
+    - [simpleComposition](Python/11_Higher%20Order%20Thinking/75_simpleComposition.py)
+    - [functionsComposition](Python/11_Higher%20Order%20Thinking/76_functionsComposition.py)
+    - [mergingVines](Python/11_Higher%20Order%20Thinking/77_mergingVines.py)
+  
   - [Showing Class](Python/12_Showing%20Class)
   - [Picturing the Parsibilities](Python/13_Picturing%20the%20Parsibilities)
