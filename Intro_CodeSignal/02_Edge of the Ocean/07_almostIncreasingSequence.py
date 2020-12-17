@@ -76,7 +76,7 @@ print(almostIncreasingSequence(myarr))
 
 # VVVVVVVVVVVVVVVVVV
 # This version passes all the tests on codesignal
-def almostIncreasingSequence(sequence):
+def almostIncreasingSequence1(sequence):
 
     #Take out the edge cases
     if len(sequence) <= 2:
@@ -107,7 +107,7 @@ def almostIncreasingSequence(sequence):
             else:
                 return False
 
-def almostIncreasingSequence(sequence):
+def almostIncreasingSequence2(sequence):
     numFail = 0
     prev =sequence[0]
     for i in range(len(sequence)-1):
@@ -130,7 +130,7 @@ def almostIncreasingSequence(sequence):
             prev = sequence[i+1]
     return True
 
-def almostIncreasingSequence(sequence):
+def almostIncreasingSequence3(sequence):
     droppped = False
     last = prev = min(sequence) - 1
     for elm in sequence:
@@ -147,10 +147,10 @@ def almostIncreasingSequence(sequence):
             prev, last = last, elm
     return True
 
-def almostIncreasingSequence(s):
+def almostIncreasingSequence4(s):
     return 3> sum((i >= j) + (i >= k) for i, j, k in zip(s, s[1:], s[2:] + [10**6]))
 
-def almostIncreasingSequence(sequence):
+def almostIncreasingSequence5(sequence):
     c = 0
     for i in range(len(sequence)-1):
         if sequence[i] >= sequence[i+1]: c += 1

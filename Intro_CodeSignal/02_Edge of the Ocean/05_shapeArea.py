@@ -27,7 +27,7 @@ def shapeArea(n):
     return (n**2+(n-1)**2)
 
 
-def shapeArea(n):
+def shapeArea2(n):
     result = 1
     for i in range(n):
         result += 4 * i

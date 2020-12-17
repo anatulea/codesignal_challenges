@@ -22,7 +22,7 @@ def checkPalindrome(inputString):
     # checkPalindrome = lambda s: s[::-1] == s
 
 # cheking the first half with the reversed second half 
-def checkPalindrome(inputString):
+def checkPalindrome2(inputString):
     for i in range(len(inputString) // 2):
         if inputString[i] != inputString[-i - 1]:
             return False

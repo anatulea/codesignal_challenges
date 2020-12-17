@@ -572,3 +572,11 @@ def avoidObstacles(inputArray):
         if sorted([i%c for i in inputArray][0]>0):
             return c
         c+=1
+
+def boxBlur(image):
+    r = []
+    for i in range(len(image)-2):
+        r.append([])
+        for j in range(len(image[0])-2):
+            r[i].append(sum(image[i][j:j+3]+image[i+1][j:j+3]+image[i+2][j:j+3])/9//1)
+    return r

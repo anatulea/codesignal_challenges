@@ -61,7 +61,7 @@ mymatrix =[ [1,1,1,0],
 print(matrixElementsSum(mymatrix))
 
 
-def matrixElementsSum(matrix):
+def matrixElementsSum2(matrix):
     matrix_copy = matrix.copy()
     total = 0
 
