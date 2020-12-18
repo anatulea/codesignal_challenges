@@ -48,3 +48,13 @@ def allLongestStrings3(inputArray):
     m = max(len(s) for s in inputArray)
     r = [s for s in inputArray if len(s) == m]
     return r
+
+# using a dictionary
+def allLongestStrings4(inputArray):
+    d = {}
+    for string in inputArray:
+        if len(string) not in d or max(d.keys())<len(string) :
+            d[len(string)]= [string]
+        else:
+            d[len(string)].append(string)
+    return d[max(d.keys())]
