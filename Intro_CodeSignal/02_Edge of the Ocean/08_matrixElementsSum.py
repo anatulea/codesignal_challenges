@@ -78,3 +78,16 @@ def matrixElementsSum2(matrix):
     for row_copy in matrix_copy:
         total+= sum(row_copy)
     return total
+
+def matrixElementsSum3(matrix):
+    total =0
+    for row in range(len(matrix)):
+        for col in range(len(matrix[row])):
+            if matrix[row][col] == 0:
+                for i in range(len(matrix) - row):
+                    matrix[row+i][col] = 0
+                print(matrix)
+            else:
+                total += matrix[row][col]
+    return total
+            
