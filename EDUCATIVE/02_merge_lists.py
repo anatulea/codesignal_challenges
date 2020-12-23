@@ -6,7 +6,7 @@ def merge_lists(lst1, lst2):
 
 # Merge list1 and list2 and return resulted list
 # SOLUTION 2
-def merge_lists(lst1, lst2):
+def merge_lists1(lst1, lst2):
     index_arr1 = 0
     index_arr2 = 0
     index_result = 0
@@ -45,7 +45,7 @@ The time complexity for this algorithm is O(n+m)O(n+m) where nn and mm are the l
 '''
 
 # Solution 3
-def merge_arrays(lst1, lst2):
+def merge_arrays2(lst1, lst2):
     ind1 = 0  # Creating 2 new variable to track the 'current index'
     ind2 = 0
     # While both indeces are less than the length of their lists
