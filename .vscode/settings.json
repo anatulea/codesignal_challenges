@@ -1,4 +1,8 @@
 {
     "python.pythonPath": "/opt/anaconda3/bin/python",
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "cSpell.words": [
+        "ipaddress",
+        "isdigit"
+    ]
 }
