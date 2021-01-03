@@ -12,6 +12,8 @@ variableName(name) = false;
 For name = "2w2", the output should be
 variableName(name) = false.
 '''
+import string
+import re
 def variableName(name):
     if name[0].isnumeric():
         return False
@@ -22,7 +24,7 @@ def variableName(name):
     for i in name:
         if i not in alph and i not in nums and i not in big:
             return False
-            print('not letter')
+            # print('not letter')
     return True 
 
 
