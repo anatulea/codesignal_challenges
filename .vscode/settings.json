@@ -3,6 +3,7 @@
     "editor.wordWrap": "on",
     "cSpell.words": [
         "ipaddress",
-        "isdigit"
+        "isdigit",
+        "isnumeric"
     ]
 }
