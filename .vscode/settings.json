@@ -4,6 +4,7 @@
     "cSpell.words": [
         "ipaddress",
         "isdigit",
-        "isnumeric"
+        "isnumeric",
+        "ispalin"
     ]
 }
